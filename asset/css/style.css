@@ -4,18 +4,95 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+nav{
+    /* text-align: right; */
+    /* display: inline-block; */
+    position: relative;
+    
+}
+
+main nav ul{
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+}
+
+main nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 5%;
+    border-radius: 90%;
+    width: 70%;
+    background-color: white;
+    text-align: center;
+}
+
+main nav ul li:hover{
+    box-shadow: 3px 10px;
+    background-color:black;
+}
+
+main nav ul li a{
+    text-decoration-line: none;
+    margin-right: 5%;
+}
+
+/* ----------Utility---------- */
+.f-rowdies{
+    font-family: 'Rowdies', cursive;
+}
+
 .container{
     height: 100vh;
 }
 
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img-style{
+    max-width: 100%;
+}
+/* ----------Utility---------- */
+
+/* ----------Main---------- */
 .red{
     background-color: red;
+    position: relative;
 }
 
 .green{
     background-color: lightgreen;
+    position: relative;
 }
 
 .yellow{
     background-color: yellow;
+    position: relative;
 }
+/* ----------Main---------- */
+
+
+.product h2{
+    text-align: center;
+    padding-top: 0;
+    font-variant: small-caps;
+    color: yellow;
+    font-size: 4em;
+}
+
+.n-2 h2{
+    color: red;
+}
+
+.n-3 h2{
+    color: rgb(71, 207, 71);
+}
+
