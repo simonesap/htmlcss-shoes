@@ -5,6 +5,10 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+
 
 nav{
     /* text-align: right; */
@@ -31,15 +35,25 @@ main nav ul li{
     text-align: center;
 }
 
-main nav ul li:hover{
-    box-shadow: 3px 10px;
-    background-color:black;
-}
-
 main nav ul li a{
+    display: inline-block;
     text-decoration-line: none;
     margin-right: 5%;
+    font-size: 30px;
+    color: black;
 }
+
+/* ----------Hover---------- */
+main nav ul li:hover{
+    box-shadow: 3px 10px;
+    color: black;
+    background-color:blue;
+}
+
+main nav ul li a:hover{
+    color: gold;
+}  
+/* ----------Hover---------- */  
 
 /* ----------Utility---------- */
 .f-rowdies{
