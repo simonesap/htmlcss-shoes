@@ -10,47 +10,38 @@ html {
   }
 
 
-nav{
-    /* text-align: right; */
-    /* display: inline-block; */
-    position: relative;
-    
-}
-
-main nav ul{
+header{
+    position: fixed;
     top: 0;
     right: 0;
-    position: fixed;
     z-index: 1;
-    display: inline-block;
 }
 
-main nav ul li{
+header nav ul li{
     display: inline-block;
-    list-style-type: none;
-    margin-right: 5%;
-    border-radius: 90%;
-    width: 70%;
+    list-style: none;
+}
+
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px;
     background-color: white;
+    height: 50px;
+    width: 50px;
     text-align: center;
-}
-
-main nav ul li a{
-    display: inline-block;
-    text-decoration-line: none;
-    margin-right: 5%;
-    font-size: 30px;
-    color: black;
+    line-height: 50px;
+    border-radius: 50%;
+    font-weight: bold;
 }
 
 /* ----------Hover---------- */
-main nav ul li:hover{
-    box-shadow: 3px 10px;
-    color: black;
-    background-color:blue;
+header nav ul li a:hover{
+    box-shadow: 5px 5px 20px black;
 }
 
-main nav ul li a:hover{
+header nav ul li a:hover{
     color: gold;
 }  
 /* ----------Hover---------- */  
@@ -62,6 +53,7 @@ main nav ul li a:hover{
 
 .container{
     height: 100vh;
+    position: relative;
 }
 
 .product{
